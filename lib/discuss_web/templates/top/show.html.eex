@@ -1,0 +1,13 @@
+<h1>Show Top</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @top.title %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.top_path(@conn, :edit, @top) %></span>
+<span><%= link "Back", to: Routes.top_path(@conn, :index) %></span>

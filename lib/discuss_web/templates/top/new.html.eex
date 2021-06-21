@@ -1,0 +1,5 @@
+<h1>New Top</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.top_path(@conn, :create)) %>
+
+<span><%= link "Back", to: Routes.top_path(@conn, :index) %></span>

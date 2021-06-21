@@ -1,0 +1,5 @@
+<h1>Edit Top</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.top_path(@conn, :update, @top)) %>
+
+<span><%= link "Back", to: Routes.top_path(@conn, :index) %></span>
